@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wiscloud.dao.UserInfoMapper">
+    <resultMap id="UserInfoResultMap" type="com.wiscloud.model.UserInfo">
+        <id column="userId" property="userId" />
+        <result column="loginName" property="loginName" />
+        <result column="password" property="password" />
+        <result column="salt" property="salt" />
+        <result column="userName" property="userName" />
+        <result column="icon" property="icon" />
+        <result column="roleId" property="roleId" />
+        <result column="status" property="status" />
+        <result column="persionId" property="persionId" />
+        <result column="createTime" property="createTime" />
+        <result column="secreteQuestion" property="secreteQuestion" />
+        <result column="secreteAnswer" property="secreteAnswer" />
+    </resultMap>
+
+
+    <select id="findUserInfoByUserName" resultType="java.util.HashMap">
+        select * from user_info where userName = #{userName}
+    </select>
+
+    <select id="userInfoList" resultMap="UserInfoResultMap">
+        SELECT * FROM user_info
+    </select>
+
+
+
+</mapper>

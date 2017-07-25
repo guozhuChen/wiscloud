@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>wiscloud-parent</artifactId>
+        <groupId>com.wiscloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../wiscloud-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>wiscloud-api</artifactId>
+    <packaging>war</packaging>
+    <name>wiscloud-api Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+
+
+    </dependencies>
+    <build>
+        <finalName>wiscloud-api</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <!--解决Intellij IDEA构建项目时，target/classes目录下不存在mapper.xml文件-->
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
+    </build>
+</project>

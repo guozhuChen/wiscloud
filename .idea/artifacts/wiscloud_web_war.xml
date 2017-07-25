@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wiscloud-web:war">
+    <output-path>$PROJECT_DIR$/wiscloud-web/target</output-path>
+    <root id="archive" name="wiscloud-web.war">
+      <element id="artifact" artifact-name="wiscloud-web:war exploded" />
+    </root>
+  </artifact>
+</component>

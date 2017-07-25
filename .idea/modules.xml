@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wiscloud-api/wiscloud-api.iml" filepath="$PROJECT_DIR$/wiscloud-api/wiscloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wiscloud-parent/wiscloud-parent.iml" filepath="$PROJECT_DIR$/wiscloud-parent/wiscloud-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wiscloud-web/wiscloud-web.iml" filepath="$PROJECT_DIR$/wiscloud-web/wiscloud-web.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智慧云平台</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" type="text/css" href="../base/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/drag.css">  <!--滑动块css-->
+
+</head>
+<body>
+<!--登录页面-->
+<div class="wiscloud-login">
+    <div class="login-head">
+        <div class="wrap1200 clearfix">
+            <div class="login-head pull-left">
+                <img class="head-logo-img" src="../base/images/cloudLogo.png" alt="logo" />
+                <span class="head-logo-title">智慧云平台</span>
+            </div>
+
+            <div class="head-friend-link pull-right">
+                <a class="head-link border-none" href="">官网</a>
+                <a class="head-link" href="">客户服务中心</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-body">
+        <div class="wrap1200 clearfix">
+            <div class="login-bg-img">
+                <img src="images/login-bg-img.png" />
+            </div>
+            <div class="login-content-box">
+                <div class="login-content">
+                    <div class="content-title-wrap">
+                        <span class="content-title">登录</span>
+
+                    </div>
+                    <form >
+                        <div class="form-div">
+                            <div class="form-input-div">
+									<span class="input-div-addon">
+										<img src="images/loginName.png" >
+									</span>
+                                <input class="input-control" type="text" id="loginName" placeholder="请输入用户名">
+                            </div>
+                        </div>
+                        <div class="form-div">
+                            <div class="form-input-div">
+									<span class="input-div-addon">
+										<img src="images/password.png" >
+									</span>
+                                <input class="input-control" type="password" id="password" placeholder="请输入密码">
+                            </div>
+                        </div>
+
+                        <!--验证码验证-->
+                        <div class="form-div" >
+                            <div class="form-input-div">
+									<span class="input-div-addon">
+										<img src="images/code.png" width="22" height="22">
+									</span>
+                                <input name="codeInput" type="text" id="codeInput" maxlength="4" class="code-input-control" placeholder="验证码">
+                                <div id="code" style="width: 150px;height: 45px;padding-left: 120px; padding-top: 10px;margin-top: -55px;"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-div">
+                            <div class="form-input-div">
+                                <input class="input-control input-submit" type="button" value="登录" onclick="loginClick()">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="forget-passwrod" >
+                        <a href="#">忘记密码</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-bottom">
+        <p class="wrap1200 bottom-copyright">©版权所有</p>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../base/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../base/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../base/layer/layer.js"></script>
+
+<script type="text/javascript" src="js/drag.js"></script> <!--滑动块css-->
+<script type="text/javascript" src="js/gVerify.js"></script>  <!--验证码-->
+
+<script type="text/javascript" src="js/loginComm.js"></script>
+
+<script type="text/javascript" src="js/loginApi.js"></script>
+
+
+</body>
+</html>
